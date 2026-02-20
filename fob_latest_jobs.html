@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infor LN Jobs – Feb 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy:   #0B1223;
+    --navy2:  #111C35;
+    --navy3:  #162040;
+    --card:   #1A2540;
+    --border: #243058;
+    --func:   #00C2A8;  /* teal – functional */
+    --tech:   #F5A623;  /* amber – technical */
+    --accent: #4F8EF7;  /* blue – links */
+    --muted:  #6B7FA8;
+    --text:   #E2E8F0;
+    --dim:    #94A3C4;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--navy);
+    font-family: 'Sora', sans-serif;
+    color: var(--text);
+    min-height: 100vh;
+    padding: 48px 32px 80px;
+  }
+
+  /* ── HERO HEADER ── */
+  .hero {
+    text-align: center;
+    margin-bottom: 56px;
+    position: relative;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: -40px -60px;
+    background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(79,142,247,.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--func);
+    margin-bottom: 14px;
+  }
+  .hero h1 {
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 800;
+    line-height: 1.1;
+    background: linear-gradient(135deg, #fff 30%, #7EC8E3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 16px;
+  }
+  .hero-sub {
+    font-size: 15px;
+    color: var(--dim);
+    max-width: 620px;
+    margin: 0 auto 28px;
+    line-height: 1.7;
+  }
+  .badges {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .5px;
+  }
+  .badge-func { background: rgba(0,194,168,.15); color: var(--func); border: 1px solid rgba(0,194,168,.35); }
+  .badge-tech { background: rgba(245,166,35,.15); color: var(--tech); border: 1px solid rgba(245,166,35,.35); }
+  .badge-info { background: rgba(79,142,247,.12); color: var(--accent); border: 1px solid rgba(79,142,247,.3); }
+
+  /* ── SECTION LABEL ── */
+  .section-label {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 52px 0 20px;
+  }
+  .section-line { flex: 1; height: 1px; }
+  .section-label h2 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 6px 18px;
+    border-radius: 6px;
+  }
+  .sl-func .section-line { background: linear-gradient(90deg, transparent, var(--func)); }
+  .sl-func .section-line:last-child { background: linear-gradient(90deg, var(--func), transparent); }
+  .sl-func h2 { color: var(--func); background: rgba(0,194,168,.1); border: 1px solid rgba(0,194,168,.3); }
+  .sl-tech .section-line { background: linear-gradient(90deg, transparent, var(--tech)); }
+  .sl-tech .section-line:last-child { background: linear-gradient(90deg, var(--tech), transparent); }
+  .sl-tech h2 { color: var(--tech); background: rgba(245,166,35,.1); border: 1px solid rgba(245,166,35,.3); }
+
+  /* ── TABLE ── */
+  .table-wrap {
+    overflow-x: auto;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    box-shadow: 0 8px 40px rgba(0,0,0,.45);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+    min-width: 1080px;
+  }
+  thead tr {
+    background: var(--navy3);
+  }
+  thead th {
+    padding: 13px 14px;
+    text-align: left;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+  tbody tr {
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    transition: background .15s;
+  }
+  tbody tr:hover { background: #1f2e50; }
+  tbody tr:last-child { border-bottom: none; }
+  tbody td {
+    padding: 13px 14px;
+    vertical-align: top;
+    line-height: 1.55;
+    color: var(--text);
+  }
+
+  /* Col specific */
+  .col-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    width: 36px;
+    text-align: center;
+  }
+  .col-title {
+    font-weight: 600;
+    font-size: 13px;
+    color: #fff;
+    min-width: 190px;
+    max-width: 220px;
+  }
+  .col-desc {
+    font-size: 11.5px;
+    color: var(--dim);
+    min-width: 220px;
+    max-width: 280px;
+  }
+  .col-company {
+    font-weight: 600;
+    min-width: 130px;
+  }
+  .col-loc {
+    min-width: 120px;
+    color: var(--dim);
+    font-size: 12px;
+  }
+  .col-date {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    white-space: nowrap;
+    min-width: 90px;
+  }
+  .col-rate {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    white-space: nowrap;
+    min-width: 110px;
+  }
+  .col-contact {
+    font-size: 11.5px;
+    min-width: 130px;
+  }
+  .col-email {
+    font-size: 11px;
+    min-width: 150px;
+  }
+  .col-link { min-width: 80px; }
+
+  /* Pill tags */
+  .pill {
+    display: inline-block;
+    padding: 2px 9px;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    margin-bottom: 2px;
+  }
+  .pill-remote { background: rgba(0,194,168,.15); color: var(--func); border: 1px solid rgba(0,194,168,.3); }
+  .pill-onsite { background: rgba(245,166,35,.15); color: var(--tech); border: 1px solid rgba(245,166,35,.3); }
+  .pill-hybrid { background: rgba(79,142,247,.15); color: var(--accent); border: 1px solid rgba(79,142,247,.3); }
+  .pill-contract { background: rgba(180,100,250,.12); color: #c084fc; border: 1px solid rgba(180,100,250,.3); }
+  .pill-ft { background: rgba(99,235,149,.12); color: #6ee7b7; border: 1px solid rgba(99,235,149,.3); }
+
+  .rate-hi  { color: #6ee7b7; }
+  .rate-mid { color: #fde68a; }
+  .rate-nd  { color: var(--muted); }
+
+  a.apply-btn {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 10.5px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: .5px;
+    transition: opacity .15s;
+  }
+  a.apply-btn:hover { opacity: .8; }
+  .btn-func { background: rgba(0,194,168,.2); color: var(--func); border: 1px solid rgba(0,194,168,.45); }
+  .btn-tech { background: rgba(245,166,35,.2); color: var(--tech); border: 1px solid rgba(245,166,35,.45); }
+
+  .email-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+  }
+  .email-link:hover { text-decoration: underline; }
+
+  /* ── FOOTER ── */
+  footer {
+    margin-top: 64px;
+    text-align: center;
+    font-size: 11px;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    padding-top: 28px;
+  }
+  footer span { color: var(--func); }
+
+  /* ── STATS BAR ── */
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0 auto 48px;
+    flex-wrap: wrap;
+  }
+  .stat {
+    text-align: center;
+  }
+  .stat-num {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1;
+    background: linear-gradient(135deg, var(--func), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .stat-num.amber {
+    background: linear-gradient(135deg, var(--tech), #f87171);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  .stat-label {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 700px) {
+    body { padding: 24px 12px 60px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-eyebrow">📋 Compiled · February 2026 · Multi-Platform Research</div>
+  <h1>Infor LN Job Opportunities<br>Functional &amp; Technical</h1>
+  <p class="hero-sub">Aggregated from Dice · Indeed · LinkedIn · ZipRecruiter · Glassdoor · TechFetch · Benchmark IT · PCG · Upwork and more — covering remote, hybrid &amp; on-site roles globally.</p>
+  <div class="badges">
+    <span class="badge badge-func">● Functional Roles</span>
+    <span class="badge badge-tech">● Technical Roles</span>
+    <span class="badge badge-info">🌐 25 Opportunities Listed</span>
+    <span class="badge badge-info">💼 Contract &amp; Full-Time</span>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat"><div class="stat-num">13</div><div class="stat-label">Functional Roles</div></div>
+  <div class="stat"><div class="stat-num amber">12</div><div class="stat-label">Technical Roles</div></div>
+  <div class="stat"><div class="stat-num">$55–$120</div><div class="stat-label">Typical Rate / hr</div></div>
+  <div class="stat"><div class="stat-num amber">8+</div><div class="stat-label">Platforms Searched</div></div>
+</div>
+
+<!-- ════════════════════════════════════════
+     SECTION 1: FUNCTIONAL ROLES
+════════════════════════════════════════ -->
+<div class="section-label sl-func">
+  <div class="section-line"></div>
+  <h2>⚙️ Infor LN — Functional Roles</h2>
+  <div class="section-line"></div>
+</div>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Job Title</th>
+      <th>Job Description</th>
+      <th>Company</th>
+      <th>Location</th>
+      <th>Date Posted</th>
+      <th>Rate / Salary</th>
+      <th>Contact Name</th>
+      <th>Contact Email</th>
+      <th>Apply</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td class="col-num">F1</td>
+      <td class="col-title">Sr. Consultant – Infor LN / Finance</td>
+      <td class="col-desc">Provides functional expertise on Infor LN Financial modules (GL, AR, AP, Cash, Fixed Assets). Consulting &amp; delivery services for PCG manufacturing clients. Full lifecycle implementation. Remote US, travel required.</td>
+      <td class="col-company">PCG</td>
+      <td class="col-loc"><span class="pill pill-remote">Remote</span><br>US (Travel)</td>
+      <td class="col-date">Jan 2026</td>
+      <td class="col-rate rate-nd">Not Disclosed</td>
+      <td class="col-contact">PCG Talent Acquisition</td>
+      <td class="col-email"><a class="email-link" href="https://www.pcg-erp.com/careers" target="_blank">Apply via PCG.com</a></td>
+      <td class="col-link"><a class="apply-btn btn-func" href="https://www.indeed.com/q-infor-ln-l-remote-jobs.html" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">F2</td>
+      <td class="col-title">Sr. Consultant – Infor LN / Manufacturing &amp; Planning</td>
+      <td class="col-desc">Functional expertise in Manufacturing/Planning modules (MRP, Shop Floor, BOM, Routing). Gap analysis, test plans, data mapping, integration approach. Travel to customer sites required.</td>
+      <td class="col-company">PCG</td>
+      <td class="col-loc"><span class="pill pill-remote">Remote</span><br>US (Travel)</td>
+      <td class="col-date">Jan 2026</td>
+      <td class="col-rate rate-nd">Not Disclosed</td>
+      <td class="col-contact">PCG Talent Acquisition</td>
+      <td class="col-email"><a class="email-link" href="https://www.pcg-erp.com/careers" target="_blank">Apply via PCG.com</a></td>
+      <td class="col-link"><a class="apply-btn btn-func" href="https://www.indeed.com/q-infor-ln-l-remote-jobs.html" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">F3</td>
+      <td class="col-title">Sr. Functional Consultant – LN Quality (Issue to Resolution)</td>
+      <td class="col-desc">Provides business/functional expertise on Infor LN Quality module. Handles customer Issue-to-Resolution workstream. Works within a PCG project team for end-to-end implementations.</td>
+      <td class="col-company">PCG</td>
+      <td class="col-loc"><span class="pill pill-remote">Remote</span><br>US</td>
+      <td class="col-date">Jan 2026</td>
+      <td class="col-rate rate-nd">Not Disclosed</td>
+      <td class="col-contact">PCG Talent Acquisition</td>
+      <td class="col-email"><a class="email-link" href="https://www.pcg-erp.com/careers" target="_blank">Apply via PCG.com</a></td>
+      <td class="col-link"><a class="apply-btn btn-func" href="https://www.indeed.com/q-infor-ln-l-remote-jobs.html" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">F4</td>
+      <td class="col-title">Sr. Consultant – Infor LN / TP Projects</td>
+      <td class="col-desc">Min. 5+ yrs with Infor LN TP Projects. End-to-end implementation for Contracts-to-Deliver &amp; Program-to-Profit workstreams. Stakeholder management, gap analysis. Travel to client sites as required.</td>
+      <td class="col-company">PCG</td>
+      <td class="col-loc"><span class="pill pill-remote">Remote</span><br>US (Travel)</td>
+      <td class="col-date">Jan 2026</td>
+      <td class="col-rate rate-nd">Not Disclosed</td>
+      <td class="col-contact">PCG Talent Acquisition</td>
+      <td class="col-email"><a class="email-link" href="https://www.pcg-erp.com/careers" target="_blank">Apply via PCG.com</a></td>
+      <td class="col-link"><a class="apply-btn btn-func" href="https://www.indeed.com/q-infor-ln-l-remote-jobs.html" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">F5</td>
+      <td class="col-title">Infor LN Functional Consultant – Manufacturing (San Diego)</td>
+      <td class="col-desc">Analyze business requirements &amp; map to LN Manufacturing. Configure Production, Planning, Shop Floor Control, BOM &amp; Routing. Provide user training, testing support, functional documentation. 12+ months contract.</td>
+      <td class="col-company">Navtech / Innova Solutions</td>
+      <td class="col-loc"><span class="pill pill-onsite">On-Site</span><br>San Diego, CA</td>
+      <td class="col-date">Feb 2026</td>
+      <td class="col-rate rate-mid">$55–$79/hr</td>
+      <td class="col-contact">Navtech Recruiter</td>
+      <td class="col-email"><a class="email-link" href="https://www.dice.com/jobs/q-infor+ln+erp+software+consultant-jobs" target="_blank">Apply via Dice</a></td>
+      <td class="col-link"><a class="apply-btn btn-func" href="https://www.dice.com/jobs/q-infor+ln+erp+software+consultant-jobs" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">F6</td>
+      <td class="col-title">Infor LN Senior Functional Consultant – Finance &amp; Planning (Remote)</td>
+      <td class="col-desc">Min. 5 yrs in Finance &amp; Planning modules (GL/AP/AR/Cash/Fixed Assets/Taxation/ICT). Articulate &amp; document application strategy. Sound knowledge on GL/AP/AR integrations. Senior advisory position.</td>
+      <td class="col-company">AMBC / US Client</td>
+      <td class="col-loc"><span class="pill pill-remote">Remote</span><br>US</td>
+      <td class="col-date">Feb 2026</td>
+      <td class="col-rate rate-nd">Not Disclosed</td>
+      <td class="col-contact">Dillip Kumar (AMBC)</td>
+      <td class="col-email"><a class="email-link" href="https://www.dice.com/jobs/q-infor-jobs" target="_blank">Apply via Dice</a></td>
+      <td class="col-link"><a class="apply-btn btn-func" href="https://www.dice.com/jobs/q-infor-jobs" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">F7</td>
+      <td class="col-title">Infor LN ERP Planning Consultant (C2C/W2)</td>
+      <td class="col-desc">Strong expertise in Part Item Master &amp; Planning Item Master for non-recurring parts. Establish &amp; execute standardized data foundation in Infor LN for global supply chain. Seattle WA (remote considered). Contract C2C/W2.</td>
+      <td class="col-company">Staffing / US Manufacturer</td>
+      <td class="col-loc"><span class="pill pill-hybrid">Hybrid</span><br>Seattle, WA</td>
+      <td class="col-date">Jan 2026</td>
+      <td class="col-rate rate-mid">$34–$90/hr</td>
+      <td class="col-contact">Via ZipRecruiter</td>
+      <td class="col-email"><a class="email-link" href="https://www.ziprecruiter.com/Jobs/Infor-Ln" target="_blank">Apply via ZipRecruiter</a></td>
+      <td class="col-link"><a class="apply-btn btn-func" href="https://www.ziprecruiter.com/Jobs/Infor-Ln" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">F8</td>
+      <td class="col-title">Infor LN ERP Process Consultant – Seattle (Remote)</td>
+      <td class="col-desc">Optimize existing business processes &amp; Infor LN system configuration. Lead comprehensive business process reviews. Provide expert system configuration recommendations. Develop implementation strategies for manufacturing ops.</td>
+      <td class="col-company">US Manufacturer (via Dice)</td>
+      <td class="col-loc"><span class="pill pill-remote">Remote</span><br>Seattle, WA client</td>
+      <td class="col-date">Jan 2026</td>
+      <td class="col-rate rate-nd">Not Disclosed</td>
+      <td class="col-contact">Via Dice.com</td>
+      <td class="col-email"><a class="email-link" href="https://www.dice.com/jobs/q-infor-jobs" target="_blank">Apply via Dice</a></td>
+      <td class="col-link"><a class="apply-btn btn-func" href="https://www.dice.com/jobs/q-infor-jobs" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">F9</td>
+      <td class="col-title">Infor LN Functional Consultant – Logistics (12+ yrs)</td>
+      <td class="col-desc">12+ yrs experience in LN Logistics — Order Mgmt, Warehousing, Central Invoicing, EDI, Service &amp; Enterprise Modeler. Infor LN 10x is a must. Baan V background an added advantage.</td>
+      <td class="col-company">HCL Global Systems</td>
+      <td class="col-loc"><span class="pill pill-remote">Remote</span><br>US</td>
+      <td class="col-date">Dec 2025</td>
+      <td class="col-rate rate-mid">$55–$79/hr</td>
+      <td class="col-contact">HCL Talent Team</td>
+      <td class="col-email"><a class="email-link" href="https://www.ziprecruiter.com/Jobs/Infor-Ln-Functional-Consultant" target="_blank">Apply via ZipRecruiter</a></td>
+      <td class="col-link"><a class="apply-btn btn-func" href="https://www.ziprecruiter.com/Jobs/Infor-Ln-Functional-Consultant" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">F10</td>
+      <td class="col-title">Infor LN Functional Consultant (Remote – Intone Networks)</td>
+      <td class="col-desc">Seasoned specialist in Infor LN ERP focusing on manufacturing. 3-month contract, 100% remote. Hands-on ERP implementation support; configuration, testing, user training. New York client.</td>
+      <td class="col-company">Intone Networks</td>
+      <td class="col-loc"><span class="pill pill-remote">Remote</span><br>New York (client)</td>
+      <td class="col-date">Jan 2026</td>
+      <td class="col-rate rate-mid">~$70–$90/hr</td>
+      <td class="col-contact">Intone Networks HR</td>
+      <td class="col-email"><a class="email-link" href="https://www.techfetch.com/job-description/infor-ln-functional-consultant-new-york-ny-j3612856" target="_blank">Apply via TechFetch</a></td>
+      <td class="col-link"><a class="apply-btn btn-func" href="https://www.techfetch.com/job-description/infor-ln-functional-consultant-new-york-ny-j3612856" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">F11</td>
+      <td class="col-title">ERP Consultant – Infor LN / Baan (Hybrid, Shelton CT)</td>
+      <td class="col-desc">Enhance &amp; optimize Infor LN v10.5 functionalities. Implement system modules not yet in use. Collaborate closely with end-users, own project tasks. Hybrid role (initial onsite then remote). 6–12 months extendable.</td>
+      <td class="col-company">Benchmark IT LLC</td>
+      <td class="col-loc"><span class="pill pill-hybrid">Hybrid</span><br>Shelton, CT</td>
+      <td class="col-date">Nov 2025</td>
+      <td class="col-rate rate-nd">Not Disclosed</td>
+      <td class="col-contact">Benchmark IT Recruiting</td>
+      <td class="col-email"><a class="email-link" href="https://bmarkits.com/job/erp-consultant-infor-ln-baan-contract-hybrid/" target="_blank">bmarkits.com</a></td>
+      <td class="col-link"><a class="apply-btn btn-func" href="https://bmarkits.com/job/erp-consultant-infor-ln-baan-contract-hybrid/" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">F12</td>
+      <td class="col-title">Infor LN Finance Consultant (BAAN) – Remote with Travel</td>
+      <td class="col-desc">LN Finance functional consulting for discrete manufacturing clients. Baan background required. Client-facing delivery. Travel to client sites. Full lifecycle implementation support. Contract &amp; Full-Time considered.</td>
+      <td class="col-company">The Dignify Solutions LLC</td>
+      <td class="col-loc"><span class="pill pill-remote">Remote</span><br>US (Travel)</td>
+      <td class="col-date">Dec 2025</td>
+      <td class="col-rate rate-nd">Not Disclosed</td>
+      <td class="col-contact">Dignify Solutions HR</td>
+      <td class="col-email"><a class="email-link" href="https://www.linkedin.com/jobs/view/infor-ln-finance-consultant-baan-remote-with-travel-at-the-dignify-solutions-llc-4224063907" target="_blank">Apply via LinkedIn</a></td>
+      <td class="col-link"><a class="apply-btn btn-func" href="https://www.linkedin.com/jobs/view/infor-ln-finance-consultant-baan-remote-with-travel-at-the-dignify-solutions-llc-4224063907" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">F13</td>
+      <td class="col-title">Infor LN / CloudSuite Functional Consultants (Finance, d/EPM, Talent)</td>
+      <td class="col-desc">Functional &amp; Technical Consultants required for CloudSuite Financials, d/EPM, Absence &amp; Talent Management. Full-time or contract. Send resume to hr@primesolutions.com. Northern Virginia / Remote.</td>
+      <td class="col-company">Prime Solutions, LLC</td>
+      <td class="col-loc"><span class="pill pill-hybrid">Hybrid</span><br>Chantilly, VA</td>
+      <td class="col-date">Feb 2026</td>
+      <td class="col-rate rate-nd">Not Disclosed</td>
+      <td class="col-contact">Prime Solutions HR</td>
+      <td class="col-email"><a class="email-link" href="mailto:hr@primesolutions.com">hr@primesolutions.com</a></td>
+      <td class="col-link"><a class="apply-btn btn-func" href="mailto:hr@primesolutions.com" target="_blank">Apply →</a></td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+
+<!-- ════════════════════════════════════════
+     SECTION 2: TECHNICAL ROLES
+════════════════════════════════════════ -->
+<div class="section-label sl-tech">
+  <div class="section-line"></div>
+  <h2>🔧 Infor LN — Technical Roles</h2>
+  <div class="section-line"></div>
+</div>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Job Title</th>
+      <th>Job Description</th>
+      <th>Company</th>
+      <th>Location</th>
+      <th>Date Posted</th>
+      <th>Rate / Salary</th>
+      <th>Contact Name</th>
+      <th>Contact Email</th>
+      <th>Apply</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td class="col-num">T1</td>
+      <td class="col-title">Sr. Integration Developer – Infor LN Practice</td>
+      <td class="col-desc">Design &amp; develop integrations within Infor LN ecosystem. Collaborate with solution architects on integration approach &amp; data flow. 7+ yrs Infor LN/Baan technical domain. Full remote. PCG practice.</td>
+      <td class="col-company">PCG</td>
+      <td class="col-loc"><span class="pill pill-remote">Remote</span><br>US</td>
+      <td class="col-date">Jan 2026</td>
+      <td class="col-rate rate-nd">Not Disclosed</td>
+      <td class="col-contact">PCG Talent Acquisition</td>
+      <td class="col-email"><a class="email-link" href="https://www.pcg-erp.com/careers" target="_blank">Apply via PCG.com</a></td>
+      <td class="col-link"><a class="apply-btn btn-tech" href="https://www.indeed.com/q-infor-ln-l-remote-jobs.html" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">T2</td>
+      <td class="col-title">Techno-Functional Consultant – Infor LN 10.4 (Long-Term W2)</td>
+      <td class="col-desc">Support &amp; enhance Infor LN 10.4 ERP. Blended functional and technical role. Long-term W2 contract. US-based. 100% remote. Must have Baan IV/V Tools, LN Studio, ION &amp; Admin hands-on experience.</td>
+      <td class="col-company">Right Skale, Inc.</td>
+      <td class="col-loc"><span class="pill pill-remote">Remote</span><br>US</td>
+      <td class="col-date">Feb 2026</td>
+      <td class="col-rate rate-hi">$100,000/yr</td>
+      <td class="col-contact">Right Skale Recruiter</td>
+      <td class="col-email"><a class="email-link" href="https://www.ziprecruiter.com/Jobs/Infor-Ln-Developer" target="_blank">Apply via ZipRecruiter</a></td>
+      <td class="col-link"><a class="apply-btn btn-tech" href="https://www.ziprecruiter.com/Jobs/Infor-Ln-Developer" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">T3</td>
+      <td class="col-title">Senior Infor LN Developer – LN 10.5 → 10.7 Migration</td>
+      <td class="col-desc">Design &amp; implement solutions for LN 10.5 to LN 10.7 Multisite migration. Architect solutions, delegate to offshore team. San Diego, CA (remote possible with travel for workshops). 12-month contract.</td>
+      <td class="col-company">Innova Solutions (client)</td>
+      <td class="col-loc"><span class="pill pill-hybrid">Hybrid</span><br>San Diego, CA</td>
+      <td class="col-date">Nov 2025</td>
+      <td class="col-rate rate-mid">$42–$95/hr</td>
+      <td class="col-contact">Innova Solutions Recruiter</td>
+      <td class="col-email"><a class="email-link" href="https://www.dice.com/jobs/q-infor+ln+erp+software+consultant-jobs" target="_blank">Apply via Dice</a></td>
+      <td class="col-link"><a class="apply-btn btn-tech" href="https://www.dice.com/jobs/q-infor+ln+erp+software+consultant-jobs" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">T4</td>
+      <td class="col-title">Infor Technical Architect – LN 10.7 Migration (San Diego)</td>
+      <td class="col-desc">Develop solid &amp; scalable solutions for LN 10.5→LN 10.7 Multisite migration. Interact with functional experts. Architect &amp; develop or delegate. 12-month contract. San Diego CA (remote possible with travel).</td>
+      <td class="col-company">Innova Solutions (client)</td>
+      <td class="col-loc"><span class="pill pill-hybrid">Hybrid</span><br>San Diego, CA</td>
+      <td class="col-date">Nov 2025</td>
+      <td class="col-rate rate-mid">$42–$95/hr</td>
+      <td class="col-contact">Innova Solutions Recruiter</td>
+      <td class="col-email"><a class="email-link" href="https://www.dice.com/jobs/q-infor-jobs" target="_blank">Apply via Dice</a></td>
+      <td class="col-link"><a class="apply-btn btn-tech" href="https://www.dice.com/jobs/q-infor-jobs" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">T5</td>
+      <td class="col-title">ERP Solution Architect – Infor LN (Finance Focus, Lisle IL)</td>
+      <td class="col-desc">Architect &amp; lead Infor LN ERP solutions for Finance &amp; Discrete Manufacturing. Design &amp; configure Infor LN NorthStar. 10+ yrs ERP exp. Deep LN/Baan Finance knowledge required. Contract role.</td>
+      <td class="col-company">Vibotek LLC</td>
+      <td class="col-loc"><span class="pill pill-hybrid">Hybrid</span><br>Lisle, IL / Remote</td>
+      <td class="col-date">Dec 2025</td>
+      <td class="col-rate rate-hi">$90k–$210k/yr</td>
+      <td class="col-contact">Vibotek Talent</td>
+      <td class="col-email"><a class="email-link" href="https://www.indeed.com/q-infor-ln-jobs.html" target="_blank">Apply via Indeed</a></td>
+      <td class="col-link"><a class="apply-btn btn-tech" href="https://www.indeed.com/q-infor-ln-jobs.html" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">T6</td>
+      <td class="col-title">Infor LN Technical Consultant (Long-term, Maryland)</td>
+      <td class="col-desc">6+ yrs hands-on LN/Baan application development including Infor LN 10x. Bachelor's in CS/Engineering required. Long-term contract. Maryland location. Baan Tools, ION, LN Studio expertise expected.</td>
+      <td class="col-company">Staffing firm (via ZipRecruiter)</td>
+      <td class="col-loc"><span class="pill pill-onsite">On-Site</span><br>Maryland</td>
+      <td class="col-date">Jan 2026</td>
+      <td class="col-rate rate-mid">$55–$90/hr</td>
+      <td class="col-contact">Via ZipRecruiter</td>
+      <td class="col-email"><a class="email-link" href="https://www.ziprecruiter.com/Jobs/Infor-Ln-Consultant" target="_blank">Apply via ZipRecruiter</a></td>
+      <td class="col-link"><a class="apply-btn btn-tech" href="https://www.ziprecruiter.com/Jobs/Infor-Ln-Consultant" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">T7</td>
+      <td class="col-title">Infor LN Developer – CloudSuite EST Remote (6–12 mo)</td>
+      <td class="col-desc">Strong technical LN CloudSuite developer (programmer, not functional). Knowledge of Birst, Factory Track, GRC &amp; Supplier Exchange a plus. 6–12 month remote contract, EST hours required.</td>
+      <td class="col-company">iTech US, Inc.</td>
+      <td class="col-loc"><span class="pill pill-remote">Remote</span><br>EST hours</td>
+      <td class="col-date">Oct 2025</td>
+      <td class="col-rate rate-mid">$42–$95/hr</td>
+      <td class="col-contact">iTech US Recruiter</td>
+      <td class="col-email"><a class="email-link" href="https://www.dice.com/job-detail/b362675c-dd19-484b-b18d-9475d36d93f6" target="_blank">Apply via Dice</a></td>
+      <td class="col-link"><a class="apply-btn btn-tech" href="https://www.dice.com/job-detail/b362675c-dd19-484b-b18d-9475d36d93f6" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">T8</td>
+      <td class="col-title">Infor Functional Resource Developer – Booz Allen (McLean, VA)</td>
+      <td class="col-desc">Lead Infor LN system development: application solutions, integrations &amp; reports. Collaborate with functional experts. Booz Allen federal practice. McLean, VA. Clearance may be required.</td>
+      <td class="col-company">Booz Allen Hamilton</td>
+      <td class="col-loc"><span class="pill pill-onsite">On-Site</span><br>McLean, VA</td>
+      <td class="col-date">Jan 2026</td>
+      <td class="col-rate rate-hi">$90k–$180k/yr</td>
+      <td class="col-contact">Booz Allen Talent</td>
+      <td class="col-email"><a class="email-link" href="https://www.indeed.com/q-infor-ln-jobs.html" target="_blank">Apply via Indeed</a></td>
+      <td class="col-link"><a class="apply-btn btn-tech" href="https://www.indeed.com/q-infor-ln-jobs.html" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">T9</td>
+      <td class="col-title">LN System Developer – Marmon Holdings (Carol Stream, IL)</td>
+      <td class="col-desc">Responsible for development of ERP LN sessions, reports &amp; tables. Reports to Data Analytics Manager. Marmon Holdings manufacturing environment (Berkshire Hathaway subsidiary). Full-time, Carol Stream, IL.</td>
+      <td class="col-company">Marmon Holdings</td>
+      <td class="col-loc"><span class="pill pill-onsite">On-Site</span><br>Carol Stream, IL</td>
+      <td class="col-date">Dec 2025</td>
+      <td class="col-rate rate-hi">$100,000/yr</td>
+      <td class="col-contact">Marmon HR</td>
+      <td class="col-email"><a class="email-link" href="https://www.indeed.com/q-infor-ln-jobs.html" target="_blank">Apply via Indeed</a></td>
+      <td class="col-link"><a class="apply-btn btn-tech" href="https://www.indeed.com/q-infor-ln-jobs.html" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">T10</td>
+      <td class="col-title">Infor LN/Baan Developer &amp; Enhancement Specialist</td>
+      <td class="col-desc">7+ yrs Infor LN/Baan ERP development &amp; enhancements. 2+ yrs client-facing requirements gathering &amp; architecture. Baan Supply Chain knowledge. ERP customization tools. Collaborate with finance &amp; operations.</td>
+      <td class="col-company">Consultonomix / US Client</td>
+      <td class="col-loc"><span class="pill pill-remote">Remote</span><br>US</td>
+      <td class="col-date">Feb 2026</td>
+      <td class="col-rate rate-mid">$76k–$160k/yr</td>
+      <td class="col-contact">Consultonomix Recruiting</td>
+      <td class="col-email"><a class="email-link" href="mailto:recruitment@consultonomix.com">recruitment@consultonomix.com</a></td>
+      <td class="col-link"><a class="apply-btn btn-tech" href="mailto:recruitment@consultonomix.com" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">T11</td>
+      <td class="col-title">Infor LN/Baan Programmer Analyst – Crossroads RMC</td>
+      <td class="col-desc">Perform unit &amp; system testing; development &amp; customizations in Infor LN/Baan. 5+ yrs relevant experience. Small established firm with national/international manufacturing clients. Chicago IL metro, hybrid.</td>
+      <td class="col-company">Crossroads RMC</td>
+      <td class="col-loc"><span class="pill pill-hybrid">Hybrid</span><br>Chicago, IL / Lisle, IL</td>
+      <td class="col-date">Jan 2026</td>
+      <td class="col-rate rate-nd">Not Disclosed</td>
+      <td class="col-contact">Crossroads RMC HR</td>
+      <td class="col-email"><a class="email-link" href="https://www.indeed.com/q-infor-ln-jobs.html" target="_blank">Apply via Indeed</a></td>
+      <td class="col-link"><a class="apply-btn btn-tech" href="https://www.indeed.com/q-infor-ln-jobs.html" target="_blank">Apply →</a></td>
+    </tr>
+
+    <tr>
+      <td class="col-num">T12</td>
+      <td class="col-title">Infor LN Technical / Functional Consultant – GAC Solutions</td>
+      <td class="col-desc">Either technical or functional LN expertise considered. GAC Solutions global ERP practice. Handle requirements, implementing/mapping in LN/Baan. Client-facing consulting role. Active LinkedIn posting.</td>
+      <td class="col-company">GAC Solutions</td>
+      <td class="col-loc"><span class="pill pill-remote">Remote</span><br>Global</td>
+      <td class="col-date">Feb 2026</td>
+      <td class="col-rate rate-nd">Not Disclosed</td>
+      <td class="col-contact">GAC Solutions Talent</td>
+      <td class="col-email"><a class="email-link" href="https://www.linkedin.com/jobs/view/infor-ln-technical-or-functional-consultant-at-gac-solutions-4226513961" target="_blank">Apply via LinkedIn</a></td>
+      <td class="col-link"><a class="apply-btn btn-tech" href="https://www.linkedin.com/jobs/view/infor-ln-technical-or-functional-consultant-at-gac-solutions-4226513961" target="_blank">Apply →</a></td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>Compiled by multi-platform research · <span>Dice · Indeed · LinkedIn · ZipRecruiter · Glassdoor · TechFetch · Benchmark IT · PCG · Upwork</span> · February 2026</p>
+  <p style="margin-top:8px;">⚠ Contact emails marked "Apply via [platform]" require creating a profile on that platform. Direct emails are shown where publicly available. Always verify listings are active before applying.</p>
+</footer>
+
+</body>
+</html>
